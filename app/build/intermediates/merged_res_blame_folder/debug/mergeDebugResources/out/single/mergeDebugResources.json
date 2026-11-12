@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Usuario\\.gradle\\daemon\\8.9\\com.freetag.app-debug-45:\\drawable_ic_freetag_logo.xml.flat",
+        "source": "C:\\Users\\Usuario\\.gradle\\daemon\\8.9\\com.freetag.app-main-47:\\drawable\\ic_freetag_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\.gradle\\daemon\\8.9\\com.freetag.app-debug-45:\\xml_accessibility_service_config.xml.flat",
+        "source": "C:\\Users\\Usuario\\.gradle\\daemon\\8.9\\com.freetag.app-main-47:\\xml\\accessibility_service_config.xml"
+    },
+    {
+        "merged": "com.freetag.app-debug-45:/drawable_widget_bg.xml.flat",
+        "source": "com.freetag.app-main-47:/drawable/widget_bg.xml"
+    },
+    {
+        "merged": "com.freetag.app-debug-45:/layout_widget_freetag.xml.flat",
+        "source": "com.freetag.app-main-47:/layout/widget_freetag.xml"
+    },
+    {
+        "merged": "com.freetag.app-debug-45:/xml_freetag_widget_info.xml.flat",
+        "source": "com.freetag.app-main-47:/xml/freetag_widget_info.xml"
+    }
+]

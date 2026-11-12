@@ -1,0 +1,22 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color emerald
+color emerald_dark
+color surface_dark
+color white
+drawable ic_freetag_logo
+drawable widget_bg
+id widget_icon
+id widget_root
+id widget_subtitle
+id widget_title
+layout widget_freetag
+string accessibility_service_description
+string accessibility_service_label
+string app_name
+string tile_name
+style Theme.FreeTag
+style Theme.FreeTag.Overlay
+xml accessibility_service_config
+xml freetag_widget_info

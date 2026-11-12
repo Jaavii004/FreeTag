@@ -1,0 +1,32 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- Outer Shield / Hexagon -->
+    <path
+        android:fillColor="#064E3B"
+        android:strokeColor="#10B981"
+        android:strokeWidth="3"
+        android:pathData="M48,8 L82,24 L82,54 C82,72 67,84 48,88 C29,84 14,72 14,54 L14,24 Z" />
+    
+    <!-- NFC Wave Arcs inside Shield -->
+    <path
+        android:strokeColor="#34D399"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M38,48 A10,10 0 0,1 48,38 A10,10 0 0,1 58,48" />
+    <path
+        android:strokeColor="#10B981"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M31,48 A18,18 0 0,1 48,31 A18,18 0 0,1 65,48" />
+    
+    <!-- Central Key / Lock Center Dot -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M48,48m-4,0a4,4 0 1,1 8,0a4,4 0 1,1 -8,0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M46,48 L50,48 L51,64 L45,64 Z" />
+</vector>

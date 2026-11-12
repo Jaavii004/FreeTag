@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.freetag.app-release-42:/drawable_ic_freetag_logo.xml.flat",
+        "source": "com.freetag.app-main-43:/drawable/ic_freetag_logo.xml"
+    },
+    {
+        "merged": "com.freetag.app-release-42:/xml_accessibility_service_config.xml.flat",
+        "source": "com.freetag.app-main-43:/xml/accessibility_service_config.xml"
+    }
+]

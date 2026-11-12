@@ -1,0 +1,277 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.freetag.app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- NFC Permissions -->
+12    <uses-permission android:name="android.permission.NFC" />
+12-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:6:5-62
+12-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:6:22-59
+13
+14    <uses-feature
+14-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:7:5-9:36
+15        android:name="android.hardware.nfc"
+15-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:8:9-44
+16        android:required="false" />
+16-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:9:9-33
+17
+18    <!-- Query installed apps to display selection list -->
+19    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+19-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:12:5-14:53
+19-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:13:9-61
+20
+21    <!-- Haptic feedback during NFC scan -->
+22    <uses-permission android:name="android.permission.VIBRATE" />
+22-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:17:5-66
+22-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:17:22-63
+23
+24    <!-- Notification permission for active focus session indicator -->
+25    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+25-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:20:5-77
+25-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:20:22-74
+26
+27    <!-- System overlay permission (for reliable interception on various Android versions) -->
+28    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+28-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:23:5-78
+28-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:23:22-75
+29    <uses-permission android:name="android.permission.REORDER_TASKS" />
+29-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:24:5-72
+29-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:24:22-69
+30
+31    <permission
+31-->[androidx.core:core:1.13.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\6b259a7d7af5af05f97686a689b0772a\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+32        android:name="com.freetag.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+32-->[androidx.core:core:1.13.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\6b259a7d7af5af05f97686a689b0772a\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+33        android:protectionLevel="signature" />
+33-->[androidx.core:core:1.13.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\6b259a7d7af5af05f97686a689b0772a\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+34
+35    <uses-permission android:name="com.freetag.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+35-->[androidx.core:core:1.13.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\6b259a7d7af5af05f97686a689b0772a\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+35-->[androidx.core:core:1.13.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\6b259a7d7af5af05f97686a689b0772a\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+36
+37    <application
+37-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:26:5-102:19
+38        android:name="com.freetag.app.FreeTagApp"
+38-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:27:9-35
+39        android:allowBackup="true"
+39-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:28:9-35
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.13.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\6b259a7d7af5af05f97686a689b0772a\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+41        android:debuggable="true"
+42        android:extractNativeLibs="false"
+43        android:icon="@drawable/ic_freetag_logo"
+43-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:29:9-49
+44        android:label="@string/app_name"
+44-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:30:9-41
+45        android:roundIcon="@drawable/ic_freetag_logo"
+45-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:31:9-54
+46        android:supportsRtl="true"
+46-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:32:9-35
+47        android:theme="@style/Theme.FreeTag" >
+47-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:33:9-45
+48
+49        <!-- Main Dashboard & Settings Activity -->
+50        <activity
+50-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:36:9-51:20
+51            android:name="com.freetag.app.ui.MainActivity"
+51-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:37:13-44
+52            android:exported="true"
+52-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:38:13-36
+53            android:launchMode="singleTop"
+53-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:39:13-43
+54            android:windowSoftInputMode="adjustResize" >
+54-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:40:13-55
+55            <intent-filter>
+55-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:41:13-44:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:42:17-69
+56-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:42:25-66
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:43:17-77
+58-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:43:27-74
+59            </intent-filter>
+60
+61            <!-- Fallback NFC tag discovered intent filter -->
+62            <intent-filter>
+62-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:47:13-50:29
+63                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+63-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:48:17-76
+63-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:48:25-73
+64
+65                <category android:name="android.intent.category.DEFAULT" />
+65-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:49:17-76
+65-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:49:27-73
+66            </intent-filter>
+67        </activity>
+68
+69        <!-- Lock Interception Screen Activity -->
+70        <activity
+70-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:54:9-62:60
+71            android:name="com.freetag.app.ui.LockOverlayActivity"
+71-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:55:13-51
+72            android:excludeFromRecents="true"
+72-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:58:13-46
+73            android:exported="false"
+73-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:56:13-37
+74            android:launchMode="singleInstance"
+74-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:57:13-48
+75            android:noHistory="false"
+75-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:59:13-38
+76            android:showWhenLocked="true"
+76-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:60:13-42
+77            android:theme="@style/Theme.FreeTag.Overlay"
+77-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:62:13-57
+78            android:turnScreenOn="true" />
+78-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:61:13-40
+79
+80        <!-- Core App Blocker Accessibility Service -->
+81        <service
+81-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:65:9-75:19
+82            android:name="com.freetag.app.service.AppBlockerService"
+82-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:66:13-54
+83            android:exported="true"
+83-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:68:13-36
+84            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+84-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:67:13-79
+85            <intent-filter>
+85-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:69:13-71:29
+86                <action android:name="android.accessibilityservice.AccessibilityService" />
+86-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:70:17-92
+86-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:70:25-89
+87            </intent-filter>
+88
+89            <meta-data
+89-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:72:13-74:72
+90                android:name="android.accessibilityservice"
+90-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:73:17-60
+91                android:resource="@xml/accessibility_service_config" />
+91-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:74:17-69
+92        </service>
+93
+94        <!-- Quick Settings Tile for one-tap presence activation -->
+95        <service
+95-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:78:9-87:19
+96            android:name="com.freetag.app.service.FocusTileService"
+96-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:79:13-53
+97            android:exported="true"
+97-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:83:13-36
+98            android:icon="@drawable/ic_freetag_logo"
+98-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:80:13-53
+99            android:label="@string/tile_name"
+99-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:81:13-46
+100            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" >
+100-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:82:13-77
+101            <intent-filter>
+101-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:84:13-86:29
+102                <action android:name="android.service.quicksettings.action.QS_TILE" />
+102-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:85:17-87
+102-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:85:25-84
+103            </intent-filter>
+104        </service>
+105
+106        <!-- Home Screen Desktop App Widget -->
+107        <receiver
+107-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:90:9-100:20
+108            android:name="com.freetag.app.receiver.FreeTagWidgetProvider"
+108-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:91:13-59
+109            android:exported="true" >
+109-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:92:13-36
+110            <intent-filter>
+110-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:93:13-96:29
+111                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+111-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:94:17-84
+111-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:94:25-81
+112                <action android:name="com.freetag.app.UPDATE_WIDGET" />
+112-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:95:17-72
+112-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:95:25-69
+113            </intent-filter>
+114
+115            <meta-data
+115-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:97:13-99:63
+116                android:name="android.appwidget.provider"
+116-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:98:17-58
+117                android:resource="@xml/freetag_widget_info" />
+117-->C:\Users\Usuario\Downloads\cardlock\app\src\main\AndroidManifest.xml:99:17-60
+118        </receiver>
+119
+120        <provider
+120-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Usuario\.gradle\caches\8.9\transforms\b6fbb72eb548501e249895ba749e641e\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+121            android:name="androidx.startup.InitializationProvider"
+121-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Usuario\.gradle\caches\8.9\transforms\b6fbb72eb548501e249895ba749e641e\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+122            android:authorities="com.freetag.app.androidx-startup"
+122-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Usuario\.gradle\caches\8.9\transforms\b6fbb72eb548501e249895ba749e641e\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+123            android:exported="false" >
+123-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Usuario\.gradle\caches\8.9\transforms\b6fbb72eb548501e249895ba749e641e\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+124            <meta-data
+124-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Usuario\.gradle\caches\8.9\transforms\b6fbb72eb548501e249895ba749e641e\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+125                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+125-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Usuario\.gradle\caches\8.9\transforms\b6fbb72eb548501e249895ba749e641e\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+126                android:value="androidx.startup" />
+126-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Usuario\.gradle\caches\8.9\transforms\b6fbb72eb548501e249895ba749e641e\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+127            <meta-data
+127-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Usuario\.gradle\caches\8.9\transforms\f4223b51d9a0b3097b290befc8f14036\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:29:13-31:52
+128                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+128-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Usuario\.gradle\caches\8.9\transforms\f4223b51d9a0b3097b290befc8f14036\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:30:17-78
+129                android:value="androidx.startup" />
+129-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Usuario\.gradle\caches\8.9\transforms\f4223b51d9a0b3097b290befc8f14036\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:31:17-49
+130            <meta-data
+130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+131                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+132                android:value="androidx.startup" />
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+133        </provider>
+134
+135        <activity
+135-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\Usuario\.gradle\caches\8.9\transforms\32d4307fe0bd85889f7dee1efb5d67c5\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+136            android:name="androidx.compose.ui.tooling.PreviewActivity"
+136-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\Usuario\.gradle\caches\8.9\transforms\32d4307fe0bd85889f7dee1efb5d67c5\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+137            android:exported="true" />
+137-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\Usuario\.gradle\caches\8.9\transforms\32d4307fe0bd85889f7dee1efb5d67c5\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+138
+139        <receiver
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+140            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+141            android:directBootAware="false"
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+142            android:enabled="true"
+142-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+143            android:exported="true"
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+144            android:permission="android.permission.DUMP" >
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+145            <intent-filter>
+145-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+146                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+147            </intent-filter>
+148            <intent-filter>
+148-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+149                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+150            </intent-filter>
+151            <intent-filter>
+151-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+152                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+152-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+152-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+153            </intent-filter>
+154            <intent-filter>
+154-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+155                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+155-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+155-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Usuario\.gradle\caches\8.9\transforms\5240c4b21e81df17c17b45d884a2b77b\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+156            </intent-filter>
+157        </receiver>
+158    </application>
+159
+160</manifest>
